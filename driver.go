@@ -315,3 +315,13 @@ func (d *Driver) Leave(r *network.LeaveRequest) error {
 
 	return nil
 }
+
+func (d *Driver) ProgramExternalConnectivity(r *network.ProgramExternalConnectivityRequest) error {
+	TraceLog.Printf("ProgramExternalConnectivity(): [ %+v ]\n", r)
+	return nil
+}
+
+func (d *Driver) RevokeExternalConnectivity(r *network.RevokeExternalConnectivityRequest) error {
+	TraceLog.Printf("RevokeExternalConnectivity(): [ %+v ]\n", r)
+	return nil
+}
